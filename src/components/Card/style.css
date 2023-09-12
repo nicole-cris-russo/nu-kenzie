@@ -1,0 +1,114 @@
+.CardTransactionDespesa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 87px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 5px solid #e9ecef;
+  transition: 0.5s;
+}
+
+.CardTransactionDespesa:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.CardTransactionRecebimento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 87px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 5px solid #03b898;
+  transition: 0.5s;
+}
+
+.CardTransactionRecebimento:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.CardBox {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 6px 0px 15px 20px;
+}
+
+.CardBox:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.CardBox button {
+  background: #e9ecef;
+  border-radius: 2.46154px;
+  border: none;
+  padding: 5px 8px;
+  margin-left: 80px;
+}
+
+button > svg {
+  display: block;
+  color: #343a40;
+  width: 100%;
+}
+
+.CardBox button:hover,
+button > svg:hover {
+  cursor: pointer;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+@media screen and (max-width: 700px) {
+  .CardTransactionRecebimento {
+    height: 60px;
+  }
+  .CardTransactionDespesa {
+    height: 60px;
+  }
+  .CardBox:nth-child(1) h3 {
+    font-size: 13px;
+  }
+  .CardBox:nth-child(1) span {
+    font-size: 11px;
+  }
+  .CardBox:last-child {
+    margin-right: 0 !important;
+  }
+  .CardBox:last-child span {
+    font-size: 11px;
+  }
+  .CardBox:last-child button {
+    padding: 2px 5px;
+    margin-right: 10px;
+    margin-left: 35px !important;
+  }
+  .CardBox:last-child svg {
+    width: 8px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 980px) {
+  .CardTransactionDespesa {
+    width: 50vw;
+    height: 80px;
+  }
+  .CardTransactionRecebimento {
+    width: 50vw;
+    height: 80px;
+  }
+}

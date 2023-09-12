@@ -1,0 +1,50 @@
+.BoxRight {
+  width: 552px;
+  /* border: 2px solid black; */
+  font-family: nunito, sans-serif;
+}
+
+.ListenedTransaction {
+  width: 100%;
+  height: 500px;
+}
+
+.ListenedTransaction ul li {
+  list-style: none;
+}
+
+.ListenedTransaction ul li + li {
+  margin-top: 25px;
+}
+
+.ListenedTransactionEmpty h2 {
+  margin-bottom: 30px;
+}
+
+.ListenedTransactionEmpty img {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .BoxRight {
+    width: 90vw;
+    margin: 25px auto 25px;
+  }
+  .ListenedTransactionEmpty h2 {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px !important;
+  }
+  .ListenedTransaction {
+    height: auto;
+  }
+  .ListenedTransaction ul li + li {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 980px) {
+  .BoxRight {
+    width: 50vw;
+  }
+}

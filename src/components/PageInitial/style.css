@@ -1,0 +1,134 @@
+.BoxPageInitial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #212529;
+}
+
+.BoxPageChild {
+  width: 25%;
+  color: #ffffff;
+}
+
+.BoxPageChild:nth-child(1) img {
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+
+.BoxPageChild h1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.BoxPageChild h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.BoxPageChild button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  width: 70%;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter";
+  /* color-primary */
+
+  background: #fd377e;
+  /* color-primary */
+
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.BoxPageChild button:hover {
+  background-color: #e34981;
+  color: #f8f9fa;
+  transition: 0.2s;
+}
+
+.BoxPageChild:last-child {
+  margin-left: 30px;
+  width: 40%;
+}
+
+.BoxPageChild:last-child img {
+  transition: 1s;
+  width: 100%;
+  animation: effect 1s alternate cubic-bezier(0.1, 0.1, 0.3, 0.1) infinite;
+}
+
+@keyframes effect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .BoxPageInitial {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+  }
+  .BoxPageChild {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 75vw !important;
+    text-align: center;
+  }
+  .BoxPageChild:nth-child(1) img {
+    margin: 35px 0 15px;
+  }
+  .BoxPageChild h1 {
+    line-height: 25px;
+    font-size: 24px;
+  }
+  .BoxPageChild h1,
+  h3 {
+    margin: 0;
+    text-align: left;
+  }
+  .BoxPageChild button {
+    width: 100%;
+  }
+  .BoxPageChild:last-child img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .BoxPageChild h1 {
+    line-height: 25px;
+    font-size: 25px;
+  }
+  .BoxPageChild h3 {
+    line-height: 15px;
+    font-size: 14px;
+  }
+  .BoxPageChild button {
+    height: 40px;
+    font-size: 12px;
+  }
+}

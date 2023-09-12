@@ -1,0 +1,50 @@
+.BoxTotalMoney {
+  margin-top: 20px;
+  width: 100%;
+  height: 96px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.BoxTotalMoney div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.BoxTotalMoney div span {
+  color: #fd377e;
+  font-weight: 700;
+}
+
+.SpanText {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 425px) {
+  .BoxTotalMoney {
+    width: 90vw;
+    margin: 10px auto;
+  }
+  .BoxTotalMoney h3 {
+    font-size: 16px;
+  }
+  .BoxTotalMoney div span {
+    font-size: 15px;
+  }
+  .SpanText {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 980px) {
+  .BoxTotalMoney {
+    width: 40vw;
+  }
+}

@@ -1,0 +1,156 @@
+.BoxForm {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 360px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.BoxForm label {
+  display: flex;
+  flex-direction: column;
+}
+
+.BoxForm > form > label > span {
+  color: #868e96;
+}
+
+.BoxForm > form > label > input {
+  width: 99%;
+  height: 50px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 10px 0 5px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.BoxFormChilds {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BoxFormChilds label {
+  display: flex;
+  width: 45%;
+  position: relative;
+}
+
+.BoxFormChilds label input {
+  width: 80%;
+  height: 48px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.BoxFormChilds label:nth-child(1)::after {
+  content: "R$";
+  position: absolute;
+  right: 13px;
+  bottom: 8px;
+  background-color: #f8f9fa;
+  padding: 8px 5px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.BoxFormChilds label:last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.BoxFormChilds label select {
+  height: 52px;
+  border: none;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 0px 25px;
+  margin-top: 5px;
+}
+
+.BoxFormChilds label select option {
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.BoxFormChilds label select:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.BoxForm button {
+  margin-top: 15px;
+  width: 100%;
+  height: 48px;
+  background-color: #fd377e;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.BoxForm button:hover {
+  color: #f8f9fa;
+  background: #e34981;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 700px) {
+  .BoxForm {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .BoxForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BoxForm label {
+    font-size: 12px;
+  }
+  .BoxForm span {
+    font-size: 10px;
+  }
+  .BoxForm select {
+    padding-left: 10px !important;
+    font-size: 12px;
+  }
+  .BoxForm button {
+    margin: 15px auto 0px;
+    height: 35px;
+    width: 50%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 980px) {
+  .BoxForm {
+    width: 40vw;
+  }
+  .BoxForm select {
+    font-size: 12px;
+    padding-left: 10px!important;
+  }
+  .BoxForm button {
+    font-size: 13px;
+  }
+}

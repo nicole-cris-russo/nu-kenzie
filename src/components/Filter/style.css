@@ -1,0 +1,63 @@
+.FilterBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.InFilterBox {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.InFilterBox h3 {
+  font-size: 16px;
+}
+
+.InFilterBox button {
+  height: inherit;
+  padding: 11px;
+  transition: 0.2s;
+
+  background: #e9ecef;
+  /* grey-2 */
+
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+}
+
+.InFilterBox button + button {
+  margin-left: 12px;
+}
+
+.InFilterBox button:hover {
+  cursor: pointer;
+  background-color: #fd377e;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 700px) {
+  .FilterBox {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .InFilterBox:nth-child(1) h3 {
+    font-size: 14px;
+  }
+  .InFilterBox button {
+    font-size: 10px;
+  }
+  .InFilterBox button + button {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 980px) {
+  .FilterBox {
+    width: 50vw;
+  }
+}

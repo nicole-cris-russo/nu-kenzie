@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+  border: none;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgb(211, 211, 211);
+  border-radius: 5px;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.BoxMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BoxMain > .BoxSections + .BoxSections {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .BoxMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+  }
+  .BoxMain > .BoxSections + .BoxSections {
+    margin-top: 15px;
+    margin-left: 0 !important;
+  }
+}
